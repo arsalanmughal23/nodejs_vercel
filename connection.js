@@ -1,5 +1,7 @@
-require('dotenv').config();
-const mongoose = require("mongoose");
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
+
+dotenv.config();
 
 async function connectMongoDB() {
     
@@ -13,7 +15,7 @@ async function connectMongoDB() {
     if(process.env.APP_ENV == 'local') {
         connectionString = `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`;
     } else {
-        connectionString = `mongodb://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`;
+        connectionString = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?retryWrites=true&w=majority`;
     }
 
     return mongoose.connect(connectionString)
@@ -21,6 +23,6 @@ async function connectMongoDB() {
         .catch((err) => console.log('MongoDB Connection Failed', err));
 }
 
-module.exports = {
+export {
     connectMongoDB,
 };

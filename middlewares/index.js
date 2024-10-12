@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 function LogReqRes(filename) {
     return (req, res, next) => {
@@ -12,6 +12,6 @@ function LogReqRes(filename) {
     }
 }
 
-module.exports = {
+export {
     LogReqRes,
 };

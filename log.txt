@@ -50,3 +50,47 @@
 1728742128116:::1 GET: /api/users
 
 1728742128949:::1 GET: /api/users
+
+1728744514498:::1 GET: /getUsers
+
+1728744617285:::1 GET: /api/users
+
+1728745119525:::1 GET: /api/users
+
+1728745189711:::1 POST: /api/users
+
+1728745232308:::1 POST: /api/users
+
+1728747155364:::1 POST: /api/users
+
+1728747479929:::1 GET: /api/users
+
+1728747537332:::1 GET: /api/users
+
+1728748939398:::1 GET: /api/users
+
+1728749388713:::1 GET: /api/users
+
+1728749549817:::1 GET: /api/users
+
+1728749614224:::1 GET: /api/users
+
+1728749783962:::1 GET: /api/users
+
+1728749932635:::1 GET: /api/users
+
+1728750214337:::1 GET: /api/users
+
+1728751388216:::1 GET: /api/users
+
+1728751921441:::1 GET: /api/users
+
+1728752029647:::1 GET: /api/users
+
+1728752207078:::1 GET: /api/users
+
+1728752442878:::1 GET: /api/users
+
+1728753007337:::1 GET: /api/users
+
+1728753036263:::1 GET: /api/users

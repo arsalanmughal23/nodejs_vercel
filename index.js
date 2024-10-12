@@ -1,9 +1,10 @@
-require('dotenv').config();
-const express = require('express');
-const userRoutes = require('./routes/user');
-const { connectMongoDB } = require('./connection');
-const { LogReqRes } = require('./middlewares');
+import dotenv from 'dotenv';
+import express from 'express';
+import userRoutes from './routes/user.js';
+import { connectMongoDB } from './connection.js';
+import { LogReqRes } from './middlewares/index.js';
 
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 

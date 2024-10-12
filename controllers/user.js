@@ -1,4 +1,4 @@
-const UserModel = require("../models/User");
+import UserModel from "../models/User.js";
 
 async function handleGetAllUsers(req, res) {
     const dataList = await UserModel.find({});
@@ -31,7 +31,7 @@ async function handleCreateNewUser(req, res) {
     res.status(201).json({status: true, message: "Record created successfully", data: createdRecord});
 }
 
-module.exports = {
+export {
     handleGetAllUsers,
     handleGetUserById,
     handleUpdateUserById,

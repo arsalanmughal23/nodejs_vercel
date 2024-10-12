@@ -1,11 +1,11 @@
-const express = require('express');
-const { 
+import express from 'express';
+import { 
     handleGetAllUsers, 
     handleGetUserById, 
     handleUpdateUserById, 
     handleDeleteUserById, 
     handleCreateNewUser 
-} = require('../controllers/user');
+} from '../controllers/user.js';
 
 const router = express.Router();
 
@@ -20,4 +20,4 @@ router
     .put(handleUpdateUserById)
     .delete(handleDeleteUserById);
 
-module.exports = router;
+export default router;
