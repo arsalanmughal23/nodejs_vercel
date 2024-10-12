@@ -17,6 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(LogReqRes('log.txt'));
 
 // Routes
+app.use('/', (req, res) => {
+    res.json({status: true, message: 'Api is responding'});
+})
 app.use('/api/users', userRoutes)
 
 app.listen(PORT, () => {
